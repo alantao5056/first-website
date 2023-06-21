@@ -2,8 +2,18 @@
 title: "About"
 ---
 
-About this site
+## About the Project
 
-```{r}
-1 + 1
-```
+*Weight and MPG of cars*. Very cool project about making graphs.
+
+Hi, my name is **Alan Tao.** I am going to attend Newton North High School. I do programming.
+
+### Goals
+
+-   +learn data science
+
+"This is data science"
+
+\~Preceptor
+
+["Kane's Free Data Science Bootcamp"](https://bootcamp.davidkane.info)

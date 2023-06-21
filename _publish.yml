@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: d4c70e32-a0c5-46d2-897d-a069d75b545d
+      url: 'https://alienjao.quarto.pub/first-website'
