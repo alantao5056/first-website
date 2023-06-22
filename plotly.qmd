@@ -1,0 +1,22 @@
+---
+title: "Chick Weight"
+editor: source
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+library(plotly)
+library(tidyverse)
+
+chick_plot <- ggplot(data = ChickWeight, mapping = aes(x = weight, y = Diet, text = weight)) +
+  geom_point(alpha=0.5) +
+  labs(title="Diet and Weight of Chicks",
+       x="Weight of Chick (in grams)",
+       y="Diet")
+
+ggplotly(chick_plot, tooltip = "text")
+```
+

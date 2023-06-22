@@ -1,27 +1,26 @@
 ---
 title: "first-website"
+execute:
+  echo: FALSE
+  message: FALSE
 ---
 
 ```{r}
 #| output: false
-#| echo: false
 library(tidyverse)
 library(ggthemes)
+library(knitr)
 ```
-
 
 ```{r}
-#| echo: false
-#| label: car-plot
-mtcars %>%
-select(mpg, wt) %>%
-ggplot(aes(x=wt, y=mpg)) +
-geom_point() +
-geom_smooth(method = "lm", formula=y~x, se=FALSE) +
-theme_clean() +
-labs(title="Fuel Efficiency and Weight",
-     subtitle="heavier cars are less fuel efficient",
-     x="Weight",
-     y="MPG")
+car_plot <- read_rds(file = "car-plot.rds")
+ggsave("car-plot.png", car_plot)
 ```
+
+```{r}
+include_graphics("images/car-plot.png")
+# weight and mpg of cars
+```
+
+
 

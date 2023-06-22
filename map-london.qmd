@@ -1,0 +1,16 @@
+---
+title: "Map of London"
+editor: source
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r map}
+library(leaflet)
+leaflet() |> 
+  setView(lat = 51.4993, lng =  -0.1280, zoom = 12) |> 
+  addTiles()
+```
+

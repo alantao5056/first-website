@@ -19,11 +19,21 @@ website:
       contents:
         - source-1.qmd
         - source-2.qmd
+        - id: interactive
+          title: "Interactive Pages"
+          style: "floating"
+          background: "#ffffff"
+          collapse-level: 3
+          contents: 
+            - plane-passengers.qmd
+            - map-london.qmd
+            - plotly.qmd
+  
   
 
 format:
   html:
-    theme: cosmo
+    theme: yeti
     css: styles.css
     toc: true
     editor: source

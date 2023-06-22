@@ -1,0 +1,15 @@
+---
+title: "Plane Passengers"
+editor: source
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r plane}
+library(dygraphs)
+dygraph(AirPassengers, main = "Plane Passengers 1950-1960") %>%
+dyRangeSelector(dateWindow = c("1950-01-01", "1960-12-31"))
+```
+
